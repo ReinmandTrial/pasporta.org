@@ -1,0 +1,43 @@
+$text1: #111111;
+$title1: #2c2f34;
+$black: #000000;
+$white: #ffffff;
+$blue: #005a8f;
+$red: #f40000;
+.h1 {
+   font-size: 44px;
+   color: $title1;
+   line-height: 1.32;
+   @media (max-width: 575.98px) {
+      font-size: 28px;
+      font-weight: normal;
+   }
+}
+.h2 {
+   font-weight: bold;
+   font-size: 26px;
+   @media (max-width: 575.98px) {
+      font-size: 21px;
+      line-height: 1.43;
+   }
+}
+.h3 {
+   font-weight: bold;
+   font-size: 24px;
+}
+.h4 {
+   font-size: 18px;
+   font-weight: bold;
+   @media (max-width: 575.98px) {
+      font-size: 16px;
+   }
+}
+.h5 {
+   font-size: 14px;
+}
+.h6 {
+   font-size: 12px;
+}
+
+@media (max-width: 575.98px) {
+}

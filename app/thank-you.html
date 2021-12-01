@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+	<!-- WRAPPER start -->
+	<div class="wrapper">
+
+		<!-- MAIN start  -->
+		<main class="main">
+
+			<div class="container">
+
+				<div class="breadcrumbs">
+					<a href="#" class="breadcrumbs__link">Главная</a>
+					<a href="#" class="breadcrumbs__link">Туристическая страховка</a>
+					<a href="#" class="breadcrumbs__link">Туристический страховой полис онлайн + COVID-19</a>
+				</div>
+
+				<div class="banner">
+					<p class="banner__short-descr h6">Туристическая страховка</p>
+					<p class="banner__descr h4">Эту страницу вы увидите всего 1 раз…</p>
+					<p class="banner__title h1">Спасибо, оплата прошла <span>успешно!</span>
+					</p>
+
+					<div class="bonus">
+						<p class="bonus__title bonus__title--mobile h2">И еще БОНУС для вас</p>
+						<div class="bonus__img">
+							<img src="images/gift.svg" alt="">
+						</div>
+						<div class="bonus__text-block">
+							<p class="bonus__title h2">И еще БОНУС для вас</p>
+							<p class="bonus__descr h2">
+								Дополнительная скидка <span>10%</span> на страховку
+								<strong>от потери багажа</strong>
+							</p>
+						</div>
+						<div class="bonus__timer timer">
+							<div class="timer__content">
+								<p class="timer__amount">
+									<img src="images/discount.png" alt="">
+								</p>
+								<p class="timer__time">09:59</p>
+								<p class="timer__descr">скидка</p>
+							</div>
+							<div class="timer__bg">
+								<img src="images/timer.png" alt="">
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="get-insurance get-insurance--page-thank-you">
+					<p class="get-insurance__title h2">Страховка потери багажа</p>
+					<p class="get-insurance__descr h4">Если ваш багаж не найден после прилета, мы гарантированно отправим Вам
+						50% страховой суммы в течении 24 часов</p>
+					<div class="get-insurance__form form-policy">
+						<div class="form-policy__content">
+
+							<div class="form-policy__main">
+								<div class="form-policy__main-container">
+									<div class="form-policy__main-header">
+										<p class="form-policy__title h4">Страховка потери багажа</p>
+									</div>
+									<div class="form-policy__form form-policy__form--flex">
+										<div class="form-policy__leftside">
+											<div class="form-policy__input input__block">
+												<div class="input__box">
+													<input type="text" class="input" placeholder="Имя">
+												</div>
+												<p class="input__error h6">Имя введено некорректно</p>
+											</div>
+											<div class="form-policy__input input__block">
+												<div class="input__box">
+													<input type="text" class="input" placeholder="Номер рейса">
+												</div>
+												<p class="input__error h6">Номер рейса введен некорректно</p>
+											</div>
+											<div class="form-policy__input input__block">
+												<div class="input__box select js-select js-calendar">
+													<div class="select__head select__head--calendar js-select-head">
+														<input type="text" name="departure" class="daterange-input"
+															placeholder="Дата поездки">
+														<span class="select__icon icon icon-calendar"></span>
+													</div>
+													<!-- <div class="select__body js-select-body">
+
+													</div> -->
+													<p class="input__error h6"></p>
+												</div>
+											</div>
+										</div>
+										<div class="form-policy__rightside">
+											<div class="form-policy__input input__block">
+												<div class="input__box">
+													<input type="text" class="input" placeholder="Фамилия">
+												</div>
+												<p class="input__error h6">Фамилия введена некорректно</p>
+											</div>
+											<div class="form-policy__input input__block">
+												<div class="input__box">
+													<input type="text" class="input" placeholder="E-mail">
+												</div>
+												<p class="input__error h6">Электронный адрес заполнен некорректно</p>
+											</div>
+											<div class="form-policy__input form-policy__input--info input__block">
+												<div class="input__box select">
+													<div class="select__head">
+														<p class="select__placeholder active">
+															Сумма компенсации 550$
+														</p>
+														<span>(STANDART)</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-policy__bottom-row">
+										<div class="form-policy__check-box checkbox__block">
+											<label class="checkbox__box">
+												<div class="checkbox">
+													<input type="checkbox" class="checkbox__none">
+													<span class="checkbox__style"></span>
+												</div>
+												<p class="checkbox__text h5">Я принимаю условия договора</p>
+											</label>
+										</div>
+										<button type="button"
+											class="form-policy__btn-pay form-policy__btn-pay--desktop btn btn-primary">Оплатить</button>
+									</div>
+								</div>
+								<div class="form-policy__buttons-block form-policy__buttons-block--mobile">
+									<button type="button" class="form-policy__btn-pay btn btn-primary">Оплатить</button>
+								</div>
+
+							</div>
+
+							<div class="form-policy__summary">
+								<div class="form-policy__total-price form-policy-total-price">
+									<p class="form-policy-total-price__title h4">Сумма к оплате</p>
+									<p class="form-policy-total-price__amount">1264 руб</p>
+								</div>
+								<div class="form-policy-tariff">
+									<button type="button" class="form-policy-tariff__item btn btn-secondary ">BASIC</button>
+									<button type="button"
+										class="form-policy-tariff__item btn btn-secondary active">STANDART</button>
+									<button type="button" class="form-policy-tariff__item btn btn-secondary ">MAX</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+				</div>
+
+				<div class="email-question">
+					<div class="email-question__img">
+						<img src="images/email-open.png" alt="">
+					</div>
+					<div class="email-question__text-block">
+						<p class="email-question__title h2">Что делать если письмо не пришло?
+						</p>
+						<p class="email-question__descr">По ошибке письмо могло попасть в папку <span>СПАМ</span> или
+							<span>РЕКЛАМА</span>, нажмите на
+							кнопку "не спам"
+							и добавьте наш email в список контактов, тогд а письма точно не потеряются.
+						</p>
+						<a href="" class="email-question__link">Вы всегда сможете отписаться от рассылки.</a>
+					</div>
+				</div>
+
+		</main>
+		<!-- MAIN end -->
+
+	</div>
+	<!-- WRAPPER end -->
+
+
+
+	<!-- SCRIPTS start  -->
+	<script src="js/jquery.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/simplebar.js"></script>
+	<script src="js/daterangepicker.js"></script>
+	<script src="js/main.js"></script>
+	<!-- <script src="js/main.min.js"></script> -->
+
+
+
+</body>
+
+</html>
