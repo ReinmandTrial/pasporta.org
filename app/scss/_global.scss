@@ -498,15 +498,12 @@ input {
 .daterangepicker .calendar-table td.today {
 	position: relative;
 }
-// .daterangepicker .calendar-table td.today::before {
-// 	content: "";
-// 	position: absolute;
-// 	bottom: -2px;
-// 	left: 50%;
-// 	-webkit-transform: translateX(-50%);
-// 	-ms-transform: translateX(-50%);
-// 	transform: translateX(-50%);
-// 	width: 18px;
-// 	height: 2px;
-// 	background: #ff4b55;
-// }
+
+// якорь
+.archon {
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	top: -10vh;
+}
+// якорь конец

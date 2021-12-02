@@ -21,7 +21,7 @@
 				<div class="breadcrumbs">
 					<a href="#" class="breadcrumbs__link">Главная</a>
 					<a href="#" class="breadcrumbs__link">Туристическая страховка</a>
-					<a href="#" class="breadcrumbs__link">Туристический страховой полис онлайн + COVID-19</a>
+					<a href="#" class="breadcrumbs__link">Туристический страховой полис онлайн</a>
 				</div>
 
 				<div class="banner">
@@ -83,7 +83,7 @@
 										<p class="card-program-full__info-definition h3">23 руб/день</p>
 									</div>
 								</div>
-								<button type="button" class="card-program-full__btn-next btn btn-primary">Далее</button>
+								<a href="#policy" class="card-program-full__btn-next btn btn-primary">Далее</a>
 							</div>
 							<div class="card-program-full__details js-accordion">
 								<div class="card-program-full__details-head">
@@ -353,7 +353,7 @@
 								</div>
 
 							</div>
-							<button type="button" class="card-program-short__btn-arrange btn btn-primary">Оформить</button>
+							<a href="#policy" class="card-program-short__btn-arrange btn btn-primary">Оформить</a>
 							<p class="card-program-short__descr">Покрытие на сумму — 50 000 USD/EUR</p>
 						</div>
 						<div class="card-program-short__footer">
@@ -407,6 +407,7 @@
 				</div>
 
 				<div class="get-insurance">
+					<div id="policy" class="archon"></div>
 					<p class="get-insurance__title h2">Оформить туристическое страхование</p>
 					<div class="get-insurance__form form-policy">
 						<div class="form-policy__step-one">
@@ -539,7 +540,8 @@
 										<button type="button"
 											class="form-policy-tariff__item btn btn-secondary active">STANDART</button>
 									</div>
-									<a href="#" class="form-policy__more-details h5">Подробнее о типе отдыха</a>
+									<a href="#" class="form-policy__more-details btn-popup btn-popup-type-of-rest h5">Подробнее о
+										типе отдыха</a>
 								</div>
 
 							</div>
@@ -967,7 +969,15 @@
 								<p class="accordion__title">Обязательна ли страховка для выезда за границу?</p>
 							</div>
 							<p class="accordion__body h5 js-accordion-body">
-
+								Может быть 2 варианта.
+								<br><br>
+								1. Нет. Если вы хотите приобрести туристический страховой полис на территории страны, в которую
+								прибыли. Такой полис будет недействителен.
+								<br><br>
+								2. Да. Если вы уже находитесь за границей и планируете поездку в другую иностранную страну.
+								Страховой полис можно оформить на сайте компании и оплатить картой.
+								<br><br>
+								Действие страхового полиса начинается с момента, как только вы пересекли границу.
 							</p>
 						</div>
 						<div class="accordion js-accordion">
@@ -1163,6 +1173,47 @@
 									<li class="accordion__list-item">
 										<span>Телефон:</span> 0 800 305 222
 									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" popup popup-type-of-rest">
+					<div class="popup-type-of-rest__body">
+						<div class="popup-type-of-rest__content">
+							<button type="button" class="popup-close icon icon-close"></button>
+							<div class="popup-type-of-rest__block popup-type-of-rest__leftside">
+								<p class="popup-type-of-rest__text h4">Без экстремального спорта (Active leisure) – нерегулярные
+									занятия любым видом спорта, включая физические упражнения:</p>
+								<ul class="popup-type-of-rest__list h4">
+									<li class="popup-type-of-rest__list-item">Катание на велосипеде, квадроцикле, багги,
+										электрических самокатах, гироскутерах и т.д. со скоростью не более 15 км в час</li>
+									<li class="popup-type-of-rest__list-item">Катание на коне, верблюде, слоне</li>
+									<li class="popup-type-of-rest__list-item">Банджи, роуп-джампинг</li>
+									<li class="popup-type-of-rest__list-item">Туристические походы</li>
+									<li class="popup-type-of-rest__list-item">Аквапарк, сафари</li>
+									<li class="popup-type-of-rest__list-item">Пляжный футбол, волейбол</li>
+									<li class="popup-type-of-rest__list-item">Плавание в бассейне и открытых водоемах
+									</li>
+									<li class="popup-type-of-rest__list-item">Рыбалка, охота</li>
+								</ul>
+							</div>
+							<div class="popup-type-of-rest__block popup-type-of-rest__rightside">
+								<p class="popup-type-of-rest__text h4">Занятия экстремальным спортом на профессиональном уровне
+									(Sport/Extreme rest) – регулярные занятия страхователем (застрахованным лицом) любым видом
+									спорта, и нерегулярными физическими упражнениями, включая экстремальные нагрузки:</p>
+								<ul class="popup-type-of-rest__list h4">
+									<li class="popup-type-of-rest__list-item">Катание на велосипеде, квадроцикле, багги,
+										электрических самокатах, гироскутерах и т.д. со скоростью более 15 км в час</li>
+									<li class="popup-type-of-rest__list-item">Рафтинг</li>
+									<li class="popup-type-of-rest__list-item">Серфинг</li>
+									<li class="popup-type-of-rest__list-item">Прыжки с высоты</li>
+									<li class="popup-type-of-rest__list-item">Альпинизм и скалолазание</li>
+									<li class="popup-type-of-rest__list-item">Акробатика</li>
+									<li class="popup-type-of-rest__list-item">Прыжки в воду</li>
+									<li class="popup-type-of-rest__list-item">Дайвинг</li>
+									<li class="popup-type-of-rest__list-item">Катание на сноуборде и лыжах</li>
 								</ul>
 							</div>
 						</div>

@@ -233,7 +233,7 @@ $(document).ready(function () {
    // Календарь конец
 
    //  скролл 
-   if ($('.wrapper').hasClass('.page-policy')) {
+   if ($('.wrapper').hasClass('page-policy')) {
       new SimpleBar(document.getElementById('mini-search__result'));
    }
    //  скролл конец
@@ -266,4 +266,38 @@ $(document).ready(function () {
       }
    });
    // Поиск страны конец
+
+   // Попап
+   $('.btn-popup-type-of-rest').on('click', function () {
+      $('.popup-type-of-rest').fadeIn();
+   });
+   //нажатие вне body
+   $(document).on('click', function (e) {
+      if (!$(e.target).closest(".popup__content").length && !$(e.target).closest(".btn-popup").length) {
+         $('.popup').fadeOut();
+      }
+      e.stopPropagation();
+   });
+   $('.popup-close').on('click', function () {
+      $('.popup').fadeOut();
+   })
+   //нажатие вне body
+   // Попап конец
+
+   // плавная прокрутка якоря
+   const anchors = document.querySelectorAll('a[href*="#"]')
+
+   for (let anchor of anchors) {
+      anchor.addEventListener('click', function (e) {
+         e.preventDefault()
+
+         const blockID = anchor.getAttribute('href').substr(1)
+
+         document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+         })
+      })
+   }
+   //плавная прокрутка якоря конец
 });
