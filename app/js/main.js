@@ -235,6 +235,7 @@ $(document).ready(function () {
    //  скролл 
    if ($('.wrapper').hasClass('page-policy')) {
       new SimpleBar(document.getElementById('mini-search__result'));
+      new SimpleBar(document.getElementById('popup-type-of-rest__list'));
    }
    //  скролл конец
 

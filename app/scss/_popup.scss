@@ -1,19 +1,18 @@
-// popup template
-
 // popup
 .popup-type-of-rest {
-   display: none;
+   // display: none;
    position: fixed;
    top: 0;
    left: 0;
    z-index: 99999;
    width: 100%;
    height: 100vh;
-   overflow-y: auto;
+   // overflow-y: auto;
    &__body {
       background: rgba(0, 0, 0, 0.5);
       width: 100%;
-      min-height: 100%;
+      // min-height: 100%;
+      height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -25,81 +24,120 @@
       font-size: 18px;
    }
    &__content {
+      height: calc(100% - 80px);
       position: relative;
-      display: flex;
+      // display: flex;
       background: $white;
       border-radius: 10px;
       max-width: 1115px;
       width: 100%;
       margin: 40px 30px;
-      padding: 50px 0;
+      padding: 95px 10px 70px 60px;
       @media (max-width: 991.98px) {
-         flex-direction: column;
-         padding: 50px 0 30px;
+         padding-left: 40px;
       }
       @media (max-width: 575.98px) {
          margin: 40px 20px;
+         padding: 50px 10px 25px 15px;
+      }
+   }
+   &__wrapper {
+      height: 100%;
+      overflow-y: auto;
+      padding-right: 32px;
+      @media (max-width: 575.98px) {
+         padding-right: 5px;
       }
    }
    &__block {
-      width: 50%;
-      padding: 0 40px;
-      @media (max-width: 991.98px) {
-         &:not(:last-child) {
-            margin-bottom: 30px;
-         }
-         width: 100%;
+      width: 100%;
+      overflow: hidden;
+      &:not(:last-child) {
+         margin-bottom: 25px;
       }
-      @media (max-width: 767.98px) {
-         padding: 0 15px;
+   }
+   &__block--calm-rest {
+      .popup-type-of-rest__list {
+         // max-height: 180px;
+      }
+      .popup-type-of-rest__column:nth-child(1) {
+         width: 24%;
+      }
+      .popup-type-of-rest__column:nth-child(2) {
+         width: 18%;
+      }
+      .popup-type-of-rest__column:nth-child(3) {
+         width: 15%;
+      }
+      .popup-type-of-rest__column:nth-child(4) {
+         width: 43%;
+      }
+   }
+   &__block--extreme-vacation {
+      .popup-type-of-rest__column:nth-child(1) {
+         width: 24%;
+      }
+      .popup-type-of-rest__column:nth-child(2) {
+         width: 23%;
+      }
+      .popup-type-of-rest__column:nth-child(3) {
+         width: 25%;
+      }
+      .popup-type-of-rest__column:nth-child(4) {
+         width: 28%;
+      }
+   }
+   &__block--professional-sports {
+      .popup-type-of-rest__list {
+         max-height: 180px;
+      }
+   }
+   &__title {
+      margin-bottom: 15px;
+      @media (max-width: 575.98px) {
+         margin-bottom: 10px;
       }
    }
 
-   &__leftside {
-      position: relative;
-      &::after {
-         content: "";
-         position: absolute;
-         top: 0;
-         right: 0;
-         width: 1px;
-         height: 85%;
-         background: $blue;
-         @media (max-width: 991.98px) {
-            display: none;
-         }
-      }
-   }
-
-   &__text {
-      font-weight: 600;
-      line-height: 1.56;
-      margin-bottom: 20px;
+   &__descr {
+      line-height: 1.4;
+      margin-bottom: 15px;
+      max-width: 818px;
       @media (max-width: 575.98px) {
          margin-bottom: 5px;
       }
    }
 
    &__list {
+      width: 100%;
+      display: flex;
+      @media (max-width: 991.98px) {
+         flex-direction: column;
+         // flex-wrap: wrap;
+      }
    }
 
+   &__column {
+      @media (max-width: 991.98px) {
+         width: 100% !important;
+      }
+   }
    &__list-item {
       font-weight: 400;
-      padding: 10px 20px;
-      border-bottom: 1px solid $blue;
-      margin-bottom: 5px;
+      line-height: 1.5;
+      padding: 5px 20px;
       position: relative;
       @media (max-width: 575.98px) {
-         padding-left: 25px;
+         padding: 5px 0 5px 15px;
          font-size: 14px;
       }
       &::before {
          content: "";
          position: absolute;
          left: 0;
-         top: 17px;
-         width: 9px;
-         height: 9px;
+         top: 14px;
+         width: 6px;
+         height: 6px;
          border-radius: 50%;
          background: $blue;
       }
